@@ -21,7 +21,7 @@ Then implement the ``javascriptChannels`` for getting the data from Web to flutt
 JavascriptChannel( channelName , onMessageReceived: (JavascriptMessage result) { }) 
 ```
 
-Pass the data web using js by channel name, like 
+Pass the data from web using js by channel name, like 
 ```
 channelName.postMessage("data");
 ```
