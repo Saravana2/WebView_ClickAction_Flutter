@@ -35,7 +35,7 @@ We are going to load the js click event by webview controller after the webpage 
 
 
 ####  Load the js click event by webview controller
--  Get the element by name of th element and write the click action for that.
+-  Get the element by name of th element and add click action for the element.
 -  commit -  is the name of the input element in github page
 -  ``element.addEventListener('click',function(){});``  - this addEventListener method will add click action to the element.
 -  addEventListener allows two parameters, first param is for action type and second param is a function. when the element     is clicked, the function will call immediately.
