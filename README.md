@@ -1,4 +1,4 @@
-# Webview click handling by js
+# Webview click handling by javascript
 
 A new Flutter application.
 
