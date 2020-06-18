@@ -1,13 +1,14 @@
-# Webview click handling by javascript
+# Handling click events in Webview with Javascript
+
 
 A new Flutter application.
 
 ## Getting Started
 
-In Flutter, touch and click events are not working in webview. so instead of write click event in dart, write click event on Javascript by element tag name, class name or id 
+In Flutter, touch and click events are not working in webview. so instead of writing click event in dart, write click event on Javascript by element tag name, class name or id 
 
 
-First step is to enable the javascript, javascript is disabled by default in webview. We can able to get each and every data from website by js.
+First step is to enable the javascript, javascript is disabled by default in webview. We can get each and every data from website by js.
 
 Enable the javascript by Webview widget ``javascriptMode`` property  
 ```
@@ -25,13 +26,13 @@ Pass the data from web using js by channel name, like
 ```
 channelName.postMessage("data");
 ```
-After posted message from js, the onMessageReceived function for the javascript channel will call with the result 'data'.
+Once the Message is posted from js,the onMessageReceived function for the javascript channel will be called with the result 'data'.
 
-`` JavascriptMessage ``  class temporarily has only one message member variable of type String, so if you need to pass complex data, you can solve it by passing a json string.
+`` JavascriptMessage ``  class temporarily has only one message member variable of type String, so if you want to pass complex data, you can achieve it by passing a json string.
 
-There is no limit for javascript channels. javascriptChannels property in webview required ``Set``,so we can add many channels.
+There is no limit for javascript channels. javascriptChannels property in webview requires ``Set``,so we can add many channels.
 
-We are going to load the js click event by webview controller after the webpage is loaded in the webview. 
+We are going to load the js click event by webview controller once the webpage is loaded in the webview.
 
 
 ####  Load the js click event by webview controller
